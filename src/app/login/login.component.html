@@ -5,11 +5,11 @@
         <img src="../../assets/images1/bank-vector-icon.jpg" alt="" width="155px" height="150px">
         <h1 align="center">My Bank</h1>
         <h6 style="font-family:cursive;">{{aim}}</h6>
-        <input type="text" (change)="acnochange($event)" [placeholder]="accounts" class="form-control" id="login_acno"><br>
-        <input type="password" (change)="pswdchange($event)" placeholder="password" class="form-control" id="login_pswd"><br>
+        <input type="text" [(ngModel)]="acno" [placeholder]="accounts" class="form-control" id="login_acno"><br>
+        <input type="password" [(ngModel)]="pswd" placeholder="password" class="form-control" id="login_pswd"><br>
         <div class="d-grid gap-2">
-        <button class="btn btn-primary" (click)="login()">Login</button><br></div>
-       <a href="" style="text-decoration:none"> forget password</a> or <a href="./signup.html" style="text-decoration:none">signup</a>
+        <button class="btn btn-primary" (click)="login()" >Login</button><br></div>
+       <a href="" style="text-decoration:none"> forget password</a> or <a routerLink="register" style="text-decoration:none">signup</a>
      </div>
      <div class="col"></div>
      <div class="col"></div></div> 

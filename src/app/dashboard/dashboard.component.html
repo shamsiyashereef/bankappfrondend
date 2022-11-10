@@ -1,0 +1,40 @@
+<div class="parent">
+    <h1>welcome {{user}}</h1>
+    <div>
+        <a routerLink="/transaction">view transaction history</a>
+    </div>
+    <div class="child"><div class="row">
+        <div class="col"></div>
+        <div class="col"></div>
+         <div class="col border border-secondary border-3  bg-light text-center shadow-lg p-5">
+            <img src="../../assets/images1/bank-vector-icon.jpg" alt="" width="155px" height="150px">
+            <h1 align="center">Deposit</h1>
+            <input type="text" [(ngModel)]="acno" placeholder="Account number" class="form-control" id="depo_acno"><br>
+            <input type="password" [(ngModel)]="pswd" placeholder="password" class="form-control" id="depo_pswd"><br>
+            <input type="text" [(ngModel)]="amount" placeholder="Amount" class="form-control" id="depo_amount"><br>
+    
+            <div class="d-grid gap-2">
+            <button class="btn btn-primary" type="button" (click)="deposit()">Deposit</button><br></div>
+           
+         </div>
+         <div class="col"></div>
+         <div class="col"></div></div> </div>
+    <div class="child"><div class="row">
+        <div class="col"></div>
+        <div class="col"></div>
+         <div class="col border border-secondary border-3  bg-light text-center shadow-lg p-5">
+            <img src="../../assets/images1/bank-vector-icon.jpg" alt="" width="155px" height="150px">
+            <h1 align="center">Withdraw</h1>
+            <input type="text" [(ngModel)]="acno1" placeholder="Account number" class="form-control" id="with_acno"><br>
+            <input type="password" [(ngModel)]="pswd1" placeholder="password" class="form-control" id="with_pswd"><br>
+            <input type="text" [(ngModel)]="amount1" placeholder="Amount" class="form-control" id="with_amount"><br>
+    
+            <div class="d-grid gap-2">
+            <button class="btn btn-primary" type="button" (click)="withdraw()">withdraw</button><br></div>
+           
+         </div>
+         <div class="col"></div>
+         <div class="col"></div></div> </div>
+</div>
+
+

@@ -1,0 +1,16 @@
+.btn{
+    border-radius: 30px;
+}
+h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 50px;
+}
+.col{
+    margin-top: 90px;
+}
+.child{
+    display: inline-block;
+    padding: 100px;
+    margin-top: -170px;
+    margin-left: 100px;
+}
